@@ -1,0 +1,39 @@
+#bgpremier{
+    background:url(../fondo.png);
+    
+}
+#bgpremier a{
+    color:white;
+}
+*{
+    font-family: "Premier";
+}
+#cuerpo{
+    display:  flex;
+    flex-direction: row;
+}
+@font-face{
+    font-family: "Premier";
+    src: url(../img/Modern\ Machine.ttf);
+}
+.pos{
+    color: white;
+}
+table{
+    
+    background-color:#6D23B6;
+    color: #47126B;
+}
+#clasificacion a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #39e300;
+    font-family: "Premier";
+}
+body{
+    background-color: red;
+    background-size: cover;
+}
+#puntos{
+    color: #2aa900;
+}

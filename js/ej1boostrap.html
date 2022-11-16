@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<div>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script defer src="custom.js"></script>
+  <nav class="navbar navbar-expand-lg" id="bgpremier">
+    <div class="container-fluid">
+      <img src="../img/logo.png" alt="" width="5%">
+      <a class="navbar-brand bg-teal" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="">
+              TABLE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../js/ejemplo.html"><summary class="visuallyHidden">Premier League Table</summary>
+                <table class="table  w-25 " id="clasificacion">
+            
+                  <thead>
+                    <tr>
+                      <th scope="col"><abbr title="Position">Pos</abbr></th>
+                      <th class="team" scope="col">Club</th>
+                      <th scope="col"><abbr title="Played">Pl</abbr></th>
+                      <th scope="col"><abbr title="Goal Difference">GD</abbr></th>
+                      <th scope="col"><abbr title="Points">Pts</abbr></th>
+                    </tr>
+                  </thead>
+            
+                  <tbody class="standingEntriesContainer isPL">
+                    <tr class="tableDark" data-filtered-table-row="26" data-filtered-table-row-name="Arsenal"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">1</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a id="clasificacion" href="//www.premierleague.com/clubs/1/Arsenal/overview">
+                          <span class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t3.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t3.png, https://resources.premierleague.com/premierleague/badges/20/t3@x2.png 2x">
+                          </span> Arsenal </a> </td>
+                      <td>14</td>
+                      <td>+22 </td>
+                      <td class="points">37</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Man City"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">2</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/11/Manchester-City/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t43.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t43.png, https://resources.premierleague.com/premierleague/badges/20/t43@x2.png 2x">
+                          </span> Man City </a> </td>
+                      <td>14</td>
+                      <td>+26 </td>
+                      <td class="points">32</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Newcastle"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">3</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/23/Newcastle-United/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t4.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t4.png, https://resources.premierleague.com/premierleague/badges/20/t4@x2.png 2x">
+                          </span> Newcastle </a> </td>
+                      <td>15</td>
+                      <td>+18 </td>
+                      <td class="points">30</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Spurs"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">4</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/21/Tottenham-Hotspur/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t6.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t6.png, https://resources.premierleague.com/premierleague/badges/20/t6@x2.png 2x">
+                          </span> Spurs </a> </td>
+                      <td>15</td>
+                      <td>+10 </td>
+                      <td class="points">29</td>
+                    </tr>
+                    <tr class="tableLight" data-filtered-table-row="26" data-filtered-table-row-name="Man Utd"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">5</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/12/Manchester-United/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t1.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t1.png, https://resources.premierleague.com/premierleague/badges/20/t1@x2.png 2x">
+                          </span> Man Utd </a> </td>
+                      <td>14</td>
+                      <td>0 </td>
+                      <td class="points">26</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Liverpool"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">6</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/10/Liverpool/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t14.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t14.png, https://resources.premierleague.com/premierleague/badges/20/t14@x2.png 2x">
+                          </span> Liverpool </a> </td>
+                      <td>14</td>
+                      <td>+11 </td>
+                      <td class="points">22</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Brighton"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">7</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/131/Brighton-and-Hove-Albion/overview">
+                          <span class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t36.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t36.png, https://resources.premierleague.com/premierleague/badges/20/t36@x2.png 2x">
+                          </span> Brighton </a> </td>
+                      <td>14</td>
+                      <td>+4 </td>
+                      <td class="points">21</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Chelsea"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">8</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/4/Chelsea/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t8.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t8.png, https://resources.premierleague.com/premierleague/badges/20/t8@x2.png 2x">
+                          </span> Chelsea </a> </td>
+                      <td>14</td>
+                      <td>0 </td>
+                      <td class="points">21</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Fulham"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">9</span> <span class="movement none"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/34/Fulham/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t54.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t54.png, https://resources.premierleague.com/premierleague/badges/20/t54@x2.png 2x">
+                          </span> Fulham </a> </td>
+                      <td>15</td>
+                      <td>-2 </td>
+                      <td class="points">19</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Brentford"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">10</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/130/Brentford/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t94.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t94.png, https://resources.premierleague.com/premierleague/badges/20/t94@x2.png 2x">
+                          </span> Brentford </a> </td>
+                      <td>15</td>
+                      <td>-2 </td>
+                      <td class="points">19</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Crystal Palace"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">11</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/6/Crystal-Palace/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t31.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t31.png, https://resources.premierleague.com/premierleague/badges/20/t31@x2.png 2x">
+                          </span> Crystal Palace </a> </td>
+                      <td>14</td>
+                      <td>-3 </td>
+                      <td class="points">19</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Aston Villa"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">12</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/2/Aston-Villa/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t7.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t7.png, https://resources.premierleague.com/premierleague/badges/20/t7@x2.png 2x">
+                          </span> Aston Villa </a> </td>
+                      <td>15</td>
+                      <td>-6 </td>
+                      <td class="points">18</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Leicester"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value" id="puntos">13</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/26/Leicester-City/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t13.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t13.png, https://resources.premierleague.com/premierleague/badges/20/t13@x2.png 2x">
+                          </span> Leicester </a> </td>
+                      <td>15</td>
+                      <td>0 </td>
+                      <td class="points">17</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Bournemouth"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">14</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/127/Bournemouth/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t91.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t91.png, https://resources.premierleague.com/premierleague/badges/20/t91@x2.png 2x">
+                          </span> Bournemouth </a> </td>
+                      <td>15</td>
+                      <td>-14 </td>
+                      <td class="points">16</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Leeds"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">15</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/9/Leeds-United/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t2.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t2.png, https://resources.premierleague.com/premierleague/badges/20/t2@x2.png 2x">
+                          </span> Leeds </a> </td>
+                      <td>14</td>
+                      <td>-4 </td>
+                      <td class="points">15</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="West Ham"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">16</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/25/West-Ham-United/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t21.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t21.png, https://resources.premierleague.com/premierleague/badges/20/t21@x2.png 2x">
+                          </span> West Ham </a> </td>
+                      <td>15</td>
+                      <td>-5 </td>
+                      <td class="points">14</td>
+                    </tr>
+                    <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Everton"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">17</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/7/Everton/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t11.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t11.png, https://resources.premierleague.com/premierleague/badges/20/t11@x2.png 2x">
+                          </span> Everton </a> </td>
+                      <td>15</td>
+                      <td>-6 </td>
+                      <td class="points">14</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Nott'm Forest"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">18</span> <span class="movement up"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/15/Nottingham-Forest/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t17.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t17.png, https://resources.premierleague.com/premierleague/badges/20/t17@x2.png 2x">
+                          </span> Nott'm Forest </a> </td>
+                      <td>15</td>
+                      <td>-19 </td>
+                      <td class="points">13</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Southampton"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">19</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/20/Southampton/overview"> <span
+                            class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t20.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t20.png, https://resources.premierleague.com/premierleague/badges/20/t20@x2.png 2x">
+                          </span> Southampton </a> </td>
+                      <td>15</td>
+                      <td>-14 </td>
+                      <td class="points">12</td>
+                    </tr>
+                    <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Wolves"
+                      data-filtered-table-row-abbr="26">
+                      <td class="pos"> <span class="value">20</span> <span class="movement down"></span> </td>
+                      <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/38/Wolverhampton-Wanderers/overview">
+                          <span class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
+                              class="badge-image badge-image--20 js-badge-image"
+                              src="https://resources.premierleague.com/premierleague/badges/20/t39.png"
+                              srcset="https://resources.premierleague.com/premierleague/badges/20/t39.png, https://resources.premierleague.com/premierleague/badges/20/t39@x2.png 2x">
+                          </span> Wolves </a> </td>
+                      <td>15</td>
+                      <td>-16 </td>
+                      <td class="points">10</td>
+                    </tr>
+                  </tbody>
+                </table></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Players
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item bg-black" href="#">TopScorer</a></li>
+              <li><a class="dropdown-item" href="#">Top Assistant</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Champions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Historic Champions</a></li>
+              <li><a class="dropdown-item" href="#">Lastest Champions</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div id="cuerpo">
+    
+
+
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="First slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="../img/premier inicio.png" class="w-100 d-block" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/ekipos.webp" class="w-100 d-block" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/logosmuchos.jpg" class="w-100 d-block" alt="Third slide">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+  </body>
+
+</html>
