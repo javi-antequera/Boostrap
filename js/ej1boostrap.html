@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>The Premier League</title>
   <link rel="stylesheet" href="../css/custom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -32,8 +32,8 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="">
               TABLE
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../js/ejemplo.html"><summary class="visuallyHidden">Premier League Table</summary>
+            <ul class="dropdown-menu bg-secondary " id="desplegable">
+              <li><a class="dropdown-item" href="../js/ejemplo.html" id="desplegable"><summary class="visuallyHidden text-light">Premier League Table</summary>
                 <table class="table  w-25 " id="clasificacion">
             
                   <thead>
@@ -49,20 +49,20 @@
                   <tbody class="standingEntriesContainer isPL">
                     <tr class="tableDark" data-filtered-table-row="26" data-filtered-table-row-name="Arsenal"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">1</span> <span class="movement none"></span> </td>
+                      <td class="pos"> <span class="value" id="champions">1</span> <span class="movement none"></span> </td>
                       <td class="team" scope="row"> <a id="clasificacion" href="//www.premierleague.com/clubs/1/Arsenal/overview">
                           <span class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
                               src="https://resources.premierleague.com/premierleague/badges/20/t3.png"
                               srcset="https://resources.premierleague.com/premierleague/badges/20/t3.png, https://resources.premierleague.com/premierleague/badges/20/t3@x2.png 2x">
-                          </span> Arsenal </a> </td>
-                      <td>14</td>
+                          </span > Arsenal </a> </td>
+                      <td >14</td>
                       <td>+22 </td>
-                      <td class="points">37</td>
+                      <td class="points" id="champions">37</td>
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Man City"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">2</span> <span class="movement none"></span> </td>
+                      <td class="pos"> <span class="value" id="champions">2</span> <span class="movement none"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/11/Manchester-City/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -71,11 +71,11 @@
                           </span> Man City </a> </td>
                       <td>14</td>
                       <td>+26 </td>
-                      <td class="points">32</td>
+                      <td class="points" id="champions">32</td>
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Newcastle"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">3</span> <span class="movement none"></span> </td>
+                      <td class="pos"> <span class="value" id="champions">3</span> <span class="movement none"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/23/Newcastle-United/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -84,11 +84,11 @@
                           </span> Newcastle </a> </td>
                       <td>15</td>
                       <td>+18 </td>
-                      <td class="points">30</td>
+                      <td class="points" id="champions">30</td>
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Spurs"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">4</span> <span class="movement none"></span> </td>
+                      <td class="pos"> <span class="value" id="champions">4</span> <span class="movement none"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/21/Tottenham-Hotspur/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -97,11 +97,11 @@
                           </span> Spurs </a> </td>
                       <td>15</td>
                       <td>+10 </td>
-                      <td class="points">29</td>
+                      <td class="points" id="champions">29</td>
                     </tr>
                     <tr class="tableLight" data-filtered-table-row="26" data-filtered-table-row-name="Man Utd"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">5</span> <span class="movement none"></span> </td>
+                      <td class="pos"> <span class="value" id="uefa">5</span> <span class="movement none"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/12/Manchester-United/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -110,7 +110,7 @@
                           </span> Man Utd </a> </td>
                       <td>14</td>
                       <td>0 </td>
-                      <td class="points">26</td>
+                      <td class="points" id="uefa">26</td>
                     </tr>
                     <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Liverpool"
                       data-filtered-table-row-abbr="26">
@@ -205,7 +205,7 @@
                     </tr>
                     <tr class="" data-filtered-table-row="26" data-filtered-table-row-name="Leicester"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value" id="puntos">13</span> <span class="movement up"></span> </td>
+                      <td class="pos"> <span class="value" >13</span> <span class="movement up"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/26/Leicester-City/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -270,7 +270,7 @@
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Nott'm Forest"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">18</span> <span class="movement up"></span> </td>
+                      <td class="pos"> <span class="value" id="descenso">18</span> <span class="movement up"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/15/Nottingham-Forest/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -279,11 +279,11 @@
                           </span> Nott'm Forest </a> </td>
                       <td>15</td>
                       <td>-19 </td>
-                      <td class="points">13</td>
+                      <td class="points" id="descenso">13</td>
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Southampton"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">19</span> <span class="movement down"></span> </td>
+                      <td class="pos"> <span class="value" id="descenso">19</span> <span class="movement down"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/20/Southampton/overview"> <span
                             class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -292,11 +292,11 @@
                           </span> Southampton </a> </td>
                       <td>15</td>
                       <td>-14 </td>
-                      <td class="points">12</td>
+                      <td class="points" id="descenso">12</td>
                     </tr>
                     <tr class="tableMid" data-filtered-table-row="26" data-filtered-table-row-name="Wolves"
                       data-filtered-table-row-abbr="26">
-                      <td class="pos"> <span class="value">20</span> <span class="movement down"></span> </td>
+                      <td class="pos"> <span class="value" id="descenso">20</span> <span class="movement down"></span> </td>
                       <td class="team" scope="row"> <a href="//www.premierleague.com/clubs/38/Wolverhampton-Wanderers/overview">
                           <span class="badge badge-image-container" data-widget="club-badge-image" data-size="20"> <img
                               class="badge-image badge-image--20 js-badge-image"
@@ -305,14 +305,14 @@
                           </span> Wolves </a> </td>
                       <td>15</td>
                       <td>-16 </td>
-                      <td class="points">10</td>
+                      <td class="points" id="descenso">10</td>
                     </tr>
                   </tbody>
                 </table></a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">MORE INFO ABOUT TABLE!  </a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -353,11 +353,41 @@
     </div>
   </nav>
 
-  <div id="cuerpo">
+  <div class="container h-75">
     
 
+    THE PREMIER LEAGUE, BEST LEAGUE IN THE WORLD
+    <section id="with-container-example">
+      <h2>THE PREMIER LEAGUE</h2>
+      <div class="container">
+          <div class="row">
+              <p class="absolute-example">
+                The Premier League is the top tier of England's football pyramid, with 20 teams battling it out for the honour of being crowned English champions. <br><br>
 
-    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                Home to some of the most famous clubs, players, managers and stadiums in world football, the Premier League is the most-watched league on the planet with one billion homes watching the action in 188 countries.<br><br>
+                
+                The league takes place between August and May and involves the teams playing each other home and away across the season, a total of 380 matches.<br><br>
+                
+                Three points are awarded for a win, one point for a draw and none for a defeat, with the team with the most points at the end of the season winning the Premier League title.<br><br>
+                
+                The teams who finish in the bottom three of the league table at the end of the campaign are relegated to the Championship, the second tier of English football.<br><br>
+                
+                Those teams are replaced by three clubs promoted from the Championship; the sides that finish in first and second place and the third via the end-of-season playoffs. <br><br>
+              </p>
+              <div class="col-xs-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.<br><br>
+              </div>
+              <div class="col-xs-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.
+              </div>
+              <div class="col-xs-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est eget tristique vestibulum. Fusce et pulvinar erat, id viverra sem. Vivamus porttitor, sapien nec mattis fermentum, sem augue ornare erat, vitae interdum ante sapien id libero. Vestibulum luctus augue pretium purus posuere.
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="First slide"></li>
@@ -382,7 +412,7 @@
       <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+      </button> -->
     </div>
 
   </div>

@@ -5,6 +5,9 @@
 #bgpremier a{
     color:white;
 }
+#bgpremier a:hover{
+    color:#39e300;
+}
 *{
     font-family: "Premier";
 }
@@ -27,13 +30,39 @@ table{
 #clasificacion a{
     text-decoration: none;
     letter-spacing: 1px;
-    color: #39e300;
+    color: white;
     font-family: "Premier";
 }
 body{
-    background-color: red;
+    background-color: blue;
     background-size: cover;
 }
 #puntos{
     color: #2aa900;
+}
+#cuerpo{    
+    
+}
+.container{
+    background: coral;
+    height: 100%;
+}
+
+.visuallyHidden{
+    background-color: #6c0b99;
+}
+#desplegable{
+    background-color: #6c0b99;
+}
+#champions{
+    color: darkturquoise;
+}
+#uefa{
+    color: orangered;
+}
+#descenso{
+    color: red;
+}
+table td{
+    color: white;
 }
