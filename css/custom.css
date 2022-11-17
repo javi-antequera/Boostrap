@@ -4,10 +4,16 @@
 }
 #bgpremier a{
     color:white;
+  
 }
+
 #bgpremier a:hover{
     color:#39e300;
 }
+#bgpremier li{
+    color:blue;
+}
+
 *{
     font-family: "Premier";
 }
@@ -17,7 +23,7 @@
 }
 @font-face{
     font-family: "Premier";
-    src: url(../img/Modern\ Machine.ttf);
+    src: url(../img/Barclays\ Premier\ League.ttf);
 }
 .pos{
     color: white;
@@ -49,24 +55,81 @@ body{
 }
 
 .visuallyHidden{
-    background-color: #6c0b99;
+    background-color: #ffffff;
+    
 }
 #desplegable{
-    background-color: #6c0b99;
+    background:url(../fondo.png)!important;
+}
+#desplegable :hover{
+    background-color: transparent;
+}
+#tabladesplegable summary{
+    text-align: center; 
+}
+table{
+    border-radius: 1%;
 }
 #champions{
     color: darkturquoise;
 }
 #uefa{
-    color: orangered;
+    color: rgb(234, 120, 79);
 }
 #descenso{
     color: red;
 }
-table td{
+table td {
+    color: white;
+}
+table th{
     color: white;
 }
 #po{
     background: url(../img/premier\ inicio.png);
     background-size: cover;
+}
+
+#imagenlogo{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.contenedor img{
+    width: 100%;
+    height: auto;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.centrado{
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.763);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropdown-menu li{
+    color: black;
+}
+@media  (max-width:576px){
+    .centrado{
+        font-size:25px;
+    }
+}
+.verde{
+    color: #e300c5;
+}
+#navbarSupportedContent{
+    font-size: 1.5em;
+
+}
+#navbarSupportedContent li{
+    padding: 1em;
 }
