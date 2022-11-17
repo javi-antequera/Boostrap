@@ -46,8 +46,28 @@ body{
 #puntos{
     color: #2aa900;
 }
-#cuerpo{    
-    
+#noruega{    
+    background: url(../img/noruega.png);
+    background-size: cover; 
+    border: solid 2px white;
+}
+
+#inglaterra{    
+    background: url(../img/inglaterra.webp);
+    background-size: auto;
+}
+#españa{    
+    background: url(../img/españa.png);
+    background-size: cover; 
+}
+#serbia{    
+    background: url(../img/serbia.png);
+    background-size: auto; 
+}
+#topscore h1,h2,h3{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.567);
+    border: solid 2px white;
 }
 .container{
     background: rgba(255, 255, 255, 0.676);

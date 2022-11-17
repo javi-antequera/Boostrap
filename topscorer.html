@@ -354,24 +354,42 @@
     </div>
   </nav>
 
-  <div class="row justify-content-center align-items-center g-2 text-center pt-5">
-    <div class="col"><h1>ACTUAL TOPSCORER</h1>
+  <div class="row justify-content-center align-items-center g-2 text-center pt-5 bg-info bg-opacity-75">
+    <div class="col m-lg-3 "><h1>ACTUAL TOP SCORERS</h1><h2>2022/23 season</h2>
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="Second slide"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="holder.js/900x500/auto/#777:#555/text:First slide" class="w-100 d-block" alt="First slide">
+            <div class="carousel-inner p-lg-3" role="listbox" id="topscore">
+                <div class="carousel-item active p-5" id="noruega">
+                    <img src="img/halaand-gol.jpg" class="w-100 d-block" alt="First slide">
+                    <h1>1º</h1><h2>Eerling Haalaand - 18 goles</h2>
+                    <h3>Manchester City, 22 años</h3>
                 </div>
-                <div class="carousel-item">
-                    <img src="holder.js/900x500/auto/#666:#444/text:Second slide" class="w-100 d-block" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="holder.js/900x500/auto/#666:#444/text:Third slide" class="w-100 d-block" alt="Third slide">
-                </div>
+                <div class="carousel-item p-5" id="inglaterra">
+                    <img src="img/kane-gol.png" class="w-100 d-block" alt="Second slide">
+                    <h1>2º</h1><h2>Harry Kane - 12 goles</h2>
+                    <h3>Tottenham Hotspur, 29 años</h3>
+                  </div>
+                <div class="carousel-item p-5" id="inglaterra">
+                    <img src="img/toney-gol.jpg" class="w-100 d-block" alt="Third slide">
+                    <h1>3º</h1><h2>IVAN TONEY - 10 goles</h2>
+                    <h3>Brentford, 26 años</h3>
+                  </div>
+                  <div class="carousel-item p-5" id="españa">
+                    <img src="img/rodrigo-gol.jpg" class="w-100 d-block" alt="Third slide">
+                    <h1>4º</h1><h2>Rodrigo Moreno - 9 goles</h2>
+                    <h3>Leeds United, 31 años</h3>
+                  </div>
+                  <div class="carousel-item p-5" id="serbia">
+                    <img src="img/mitrovic-gol.jpg" class="w-100 d-block" alt="Third slide">
+                    <h1>5º</h1><h2>ALEKSANDAR MITROVIĆ - 9 goles</h2>
+                    <h3>Fulham, 28 años</h3>
+                  </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -384,9 +402,12 @@
         </div>
     
     </div>
-    <div class="col"><h1>HISTORIC TOPSCORER</h1></div>
+    <div class="col"><h1>HISTORIC TOP SCORERS</h1></div>
   </div>
   </body>
+
+
+  
   <footer class="bg-light text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
