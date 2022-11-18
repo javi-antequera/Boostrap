@@ -42,6 +42,7 @@ table{
 body{
     background-color: blue;
     background-size: cover;
+    overflow-x: hidden;
 }
 #puntos{
     color: #2aa900;
@@ -54,26 +55,52 @@ body{
 
 #inglaterra{    
     background: url(../img/inglaterra.webp);
-    background-size: auto;
+    background-size: cover;
 }
 #españa{    
     background: url(../img/españa.png);
     background-size: cover; 
+    border: solid 2px white;
 }
 #serbia{    
     background: url(../img/serbia.png);
-    background-size: auto; 
+    background-size: cover; 
+    border: solid 2px white;
+}
+#argentina{    
+    background: url(../img/argentina.png);
+    background-size: cover; 
+    border: solid 2px white;
 }
 #topscore h1,h2,h3{
     color: white;
     background-color: rgba(0, 0, 0, 0.567);
     border: solid 2px white;
 }
+#carouselId img{
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+#carouselId2 img{
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+#cuerposcore{
+    background: url(../img/FONDOFUTBOL.jpg);
+}
+#cuerposcore h1{
+    color: white;
+}
 .container{
     background: rgba(255, 255, 255, 0.676);
     height: 100%;
 }
-
+.gboot{
+    font-size: 50px;
+    color: #6D23B6;
+}
 .visuallyHidden{
     background-color: #ffffff;
     
@@ -137,6 +164,16 @@ table th{
 }
 .dropdown-menu li{
     color: black;
+}
+@media  (max-width:576px){
+    #salah{
+        width: 60%;
+    }
+}
+@media  (max-width:720px){
+    #salah{
+        width: 80%;
+    }
 }
 @media  (max-width:576px){
     .centrado{
