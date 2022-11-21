@@ -36,7 +36,7 @@
               TABLE
             </a>
             <ul class="dropdown-menu  " id="tabladesplegable">
-              <li><a class="dropdown-item" href="../js/ejemplo.html" id="tabladesplegable"><summary class="visuallyHidden text-dark">Premier League Table</summary>
+              <li><a class="dropdown-item" id="tabladesplegable"><summary class="visuallyHidden text-dark">Premier League Table</summary>
                 <table class="table  w-25 " id="clasificacion">
             
                   <thead>
@@ -312,10 +312,6 @@
                     </tr>
                   </tbody>
                 </table></a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">MORE INFO ABOUT TABLE!  </a></li>
             </ul>
           </li>
           <li class="nav-item dropdown" id="desplegable" >
@@ -325,8 +321,11 @@
             <ul class="dropdown-menu" id="desplegable">
               <li><a class="dropdown-item morado-nav" href="topscorer.html">
                 TopScorer</a></li>
-              <li><a class="dropdown-item" href="#">Top Assistant</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              <li><a class="dropdown-item" href="market.html">Market</a></li>
+
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -336,14 +335,10 @@
             <ul class="dropdown-menu" id="desplegable">
               <li><a class="dropdown-item" href="actualchampions.html">Actual Champion</a></li>
               <li><a class="dropdown-item X" href="historicchampions.html">Historic Champions</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link " href="partners.html">PARTNERS</a>
           </li>
         </ul>
         <!-- <form class="d-flex" role="search">
@@ -404,9 +399,37 @@
       
       
     </div>
-    <div class="row justify-content-center align-items-center g-2">
-
-    
+    <div class="row w-50 text-center d-block m-auto">
+      <h3>top 3 premier league champions</h3>
+      <div id="carouselId" class="carousel slide mb-5" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner " role="listbox">
+          <div class="carousel-item active">
+            <h2>1º</h2><h1>Manchester United-13 titles</h1>
+            <img src="img/unitedEs.png" class="w-50 d-block text-center align-items-center d-block m-auto" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <h2>2º</h2><h1>Cheslsea F.C- 5 titles</h1>
+            <img src="img/chelseaEs.png" class="w-50 d-block text-center align-items-center d-block m-auto" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <h2>3º</h2><h1>Manchester City- 4 titulos</h1>
+            <img src="img/cityEs.png" class="w-50 d-block text-center align-items-center d-block m-auto" alt="Third slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+      </div>
   </div>
 
 

@@ -54,8 +54,9 @@ body{
 }
 
 #inglaterra{    
-    background: url(../img/inglaterra.webp);
+    background: url(../img/inglaterra.png);
     background-size: cover;
+    border: solid 2px white;
 }
 #españa{    
     background: url(../img/españa.png);
@@ -170,8 +171,8 @@ table th{
     height: 30em;
     border: solid white 3px;
     margin-top: 15%;
-    margin-left: 20%;
 }
+
 .enlace{
     color: #39e300;
     background-color: #47126B;
@@ -187,10 +188,18 @@ table th{
     #salah{
         width: 60%;
     }
+    #videocity{
+        width:460px; 
+        height:200px;
+    }
 }
 @media  (max-width:720px){
     #salah{
         width: 80%;
+    }
+    #videocity{
+        width:460px; 
+        height:200px;
     }
 }
 @media  (max-width:576px){

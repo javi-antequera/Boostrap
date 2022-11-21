@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Premier League</title>
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -36,7 +37,7 @@
               TABLE
             </a>
             <ul class="dropdown-menu  " id="tabladesplegable">
-              <li><a class="dropdown-item" href="../js/ejemplo.html" id="tabladesplegable"><summary class="visuallyHidden text-dark">Premier League Table</summary>
+              <li><a class="dropdown-item" id="tabladesplegable"><summary class="visuallyHidden text-dark">Premier League Table</summary>
                 <table class="table  w-25 " id="clasificacion">
             
                   <thead>
@@ -312,10 +313,6 @@
                     </tr>
                   </tbody>
                 </table></a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">MORE INFO ABOUT TABLE!  </a></li>
             </ul>
           </li>
           <li class="nav-item dropdown" id="desplegable" >
@@ -325,8 +322,11 @@
             <ul class="dropdown-menu" id="desplegable">
               <li><a class="dropdown-item morado-nav" href="topscorer.html">
                 TopScorer</a></li>
-              <li><a class="dropdown-item" href="#">Top Assistant</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              <li><a class="dropdown-item" href="market.html">Market</a></li>
+
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -336,10 +336,6 @@
             <ul class="dropdown-menu" id="desplegable">
               <li><a class="dropdown-item" href="actualchampions.html">Actual Champion</a></li>
               <li><a class="dropdown-item X" href="historicchampions.html">Historic Champions</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -403,6 +399,46 @@
       </div>
       <p class="p-4 text-xl-center"> SINCE 27 May, 1992</p>
       </div>
+  </div>
+  <div class="col-12 p-5 w-50 m-auto">
+    <h2>RECEIVE NEWS FROM YOUR TEAM IN YOUR MAIL</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">TEAM </label><br>
+        <select name="" id="">
+          <option value="volvo">Bournemouth</option>
+          <option value="saab">Arsenal</option>
+          <option value="opel">Aston Villa</option>
+          <option value="audi">Brentford</option>
+          <option value="audi">Brighton and Hove Albion</option>
+          <option value="volvo">Chelsea</option>
+          <option value="saab">Crystal Palace</option>
+          <option value="opel">Everton</option>
+          <option value="audi">Fulham</option>
+          <option value="audi">Leeds United</option>
+          <option value="volvo">Leicester City</option>
+          <option value="saab">Liverpool</option>
+          <option value="opel">Manchester City</option>
+          <option value="audi">Manchester United</option>
+          <option value="audi">Newcastle United</option>
+          <option value="volvo">Nottingham Forest</option>
+          <option value="saab">Southampton</option>
+          <option value="opel">Tottenham Hotspur</option>
+          <option value="audi">West Ham uNITED</option>
+          <option value="audi">wOLVERHAMPTON wANDERERS</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Market info</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 </div>
 
