@@ -202,10 +202,13 @@ table th{
         height:200px;
     }
 }
-@media  (max-width:576px){
+@media  (max-width:776px){
     .centrado{
         font-size:25px;
     }
+}
+.navbar-toggler-icon{
+    color: white;
 }
 .verde{
     color: #e300c5;
