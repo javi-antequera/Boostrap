@@ -184,6 +184,9 @@ table th{
     height: 20em;
     border: solid white 3px;
 }
+#ganadores img{
+    border: none;
+}
 @media  (max-width:576px){
     #salah{
         width: 60%;

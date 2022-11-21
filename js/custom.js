@@ -1,9 +1,10 @@
-function aparecerTabla(){
-    if(document.getElementById("ojo").className=="bi bi-eye-slash-fill"){
-        document.getElementById("ojo").className="bi bi-eye-fill";
-        document.getElementById("inputpass").type="password";
+function alertequipo(){
+    $equipo=document.getElementById("select").value;
+    if(document.getElementById("checkbox").checked){
+        $check="YES";
     }else{
-        document.getElementById("ojo").className="bi bi-eye-slash-fill";
-        document.getElementById("inputpass").type="text";
+        $check="NO";
     }
+    
+    alert("Mail registered correctly,\n Team: "+$equipo +"\n Market info: "+$check);
 }
